@@ -1,0 +1,115 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: #DDDDDD;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scale: 1;
+}
+
+#root, body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.font-title {
+  font-family: 'Tangerine', serif;
+  font-size: 92px;
+}
+
+.font-subtitle {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+}
+
+.font-memoir {
+  font-family: 'Tangerine', serif;
+  font-size: 28px;
+  color: #AAAAAA
+}
+
+.font-body {
+  font-family: 'Tangerine', serif;
+  font-size: 14px;
+}
+
+.font-nav {
+  font-family: 'Tangerine', serif;
+  font-size: 28px;
+}
+
+div.background {
+  /*background-image: url("img/mt-maunganui.webp");*/
+  background-color: #222222;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.kevin {
+  width: 100%;
+  max-width: 20vw;
+  border-radius: 10px;
+}
+
+nav.navbar a {
+  padding: 20px;
+  margin: 20px;
+  text-decoration: none;
+  color: #DDDDDD;
+  border-radius: 10px;
+  
+  -webkit-transition: all 0.2s 0s ease-in-out;
+  -moz-transition: all 0.2s 0s ease-in-out;
+  -o-transition: all 02s 0s ease-in-out;
+  transition: all 0.2s 0s ease-in-out;
+}
+
+nav.navbar a:hover {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+nav.navbar a.selected {
+  background-color: #DDDDDD;
+  color: #333333;
+  font-weight: 800;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.middle {
+  align-items: center;
+  justify-content: center;
+}
+
+.grow {
+  flex: 1;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
