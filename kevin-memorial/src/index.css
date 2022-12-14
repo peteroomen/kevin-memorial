@@ -18,11 +18,18 @@ body {
 .font-title {
   font-family: 'Tangerine', serif;
   font-size: 92px;
+  font-weight: 800;
 }
 
 .font-subtitle {
   font-family: 'Tangerine', serif;
   font-size: 48px;
+}
+
+.font-pagetitle {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  font-weight: 800;
 }
 
 .font-memoir {
@@ -33,7 +40,7 @@ body {
 
 .font-body {
   font-family: 'Tangerine', serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .font-nav {
@@ -58,6 +65,10 @@ div.background {
 img.kevin {
   width: 100%;
   max-width: 20vw;
+  border-radius: 10px;
+}
+
+div.kevinsMusicWrapper {
   border-radius: 10px;
 }
 
@@ -100,6 +111,10 @@ nav.navbar a.selected {
 .flex.middle {
   align-items: center;
   justify-content: center;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
 }
 
 .grow {

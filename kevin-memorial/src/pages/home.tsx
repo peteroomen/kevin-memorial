@@ -13,7 +13,7 @@ function Home() {
                     Kevin<br/>
                     Smith
                 </div>
-                <div className="font-subtitle">
+                <div className="font-subtitle" style={{marginTop: "20px", marginBottom: "20px"}}>
                     1962-2022
                 </div>
                 <div className="font-memoir">

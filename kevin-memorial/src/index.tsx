@@ -10,7 +10,7 @@ import "./index.css";
 import Home from './pages/home';
 import Memories from './pages/memories';
 import Music from './pages/music';
-import Media from './pages/media';
+import Photos from './pages/photos';
 
 const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/media",
-    element: <Media />
+    path: "/photos",
+    element: <Photos />
   },
   {
     path: "/music",

@@ -4,7 +4,7 @@ interface IProps {
 function Navbar(props: IProps) {
     let links = [
         {title: 'Home', url: '/'},
-        {title: 'Media', url: '/media'},
+        {title: 'Photos', url: '/photos'},
         {title: 'Music', url: '/music'},
         {title: 'Memories', url: '/memories'},
     ];
