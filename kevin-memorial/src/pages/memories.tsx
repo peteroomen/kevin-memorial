@@ -3,24 +3,6 @@ import Navbar from "../components/navbar";
 import { MemoriesService } from "../services/memoriesService";
 
 function Memories() {
-    const memoriesService = new MemoriesService("http://ripkevin.nz/api", "supersecretpassword240");
-    useEffect(() => {
-        memoriesService.listApprovedMemories()
-            .then(data => console.log("loaded", setMemories(data)))
-    }, [])
-
-    const [memories, setMemories] = useState<any>();
-
-    const [name, setName] = useState<string>("");
-    const [comment, setComment] = useState<string>("");
-    const [submitted, setSubmitted] = useState(false);
-
-    const handleSubmit = () => {
-        memoriesService.createMemory(name, comment);
-        setName("");
-        setComment("");
-        setSubmitted(true);
-    }
 
     return (
         <div className="background flex row column-r-m middle">
@@ -33,29 +15,7 @@ function Memories() {
                         Memories
                     </div>
                     <div className="font-body">
-                        Fill out the form below, and share a favorite memory of Kevin.
-                    </div>
-                    <div className="flex column" style={{gap: "10px"}}>
-                        <input type={"text"} placeholder={"Enter your name"} style={{width: "80vw"}} onChange={(e) => setName(e.target.value)} value={name} />
-                        <textarea placeholder={"Enter your comment"} rows={3} onChange={(e) => setComment(e.target.value)} value={comment} />
-                        <button className="submit-comment" onClick={handleSubmit} disabled={name === "" || comment === ""}>Submit</button>
-                    </div>
-                    {submitted && 
-                        <div className="font-body">Memory submitted, thanks &lt;3</div>
-                    }
-                    <div className="font-subtitle2">
-                        Read what others have shared
-                    </div>
-                    <div style={{height: "100%", overflow: "auto"}}>
-                        <div className="flex column" style={{gap: "20px"}}>
-                            {!memories && <div className="font-body">Loading...</div>}
-                            {memories && memories.map((memory: any) => 
-                                <div className="flex column memory">
-                                    <div className="font-memoir" style={{maxWidth: "80vw"}}>{memory.name}</div>
-                                    <pre className="font-body" style={{maxWidth: "80vw"}}>{memory.comment}</pre>
-                                </div>  
-                            )}
-                        </div>
+                        Leave a favourite memory on <a className="link" href="https://www.facebook.com/profile.php?id=100006305920079">Kevin's Facebook Wall</a>
                     </div>
                 </div>
             </div>
