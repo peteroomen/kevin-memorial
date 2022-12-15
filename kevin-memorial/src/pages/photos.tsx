@@ -42,14 +42,14 @@ function Photos() {
     }, []);
 
   return (
-    <div className="background">
-        <div className="flex row middle w-100 h-100">
+    <div className="background flex row column-r-m middle">
+        <div className="grow h-100" style={{overflow: "auto"}}>
             <div 
-                className='flex column grow' 
-                style={{paddingLeft: "80px", paddingRight: "80px", paddingBottom: "80px", height: "100%"}}
+                className="flex column reset-justify-m middle w-100 h-100 gap pl-l pr-l pt-l pb-l" 
+                style={{boxSizing: "border-box"}}
             >
-                <div className="font-pagetitle" style={{paddingTop: "80px", paddingBottom: "20px"}}>Photos</div>
-                <div className="font-body" style={{paddingBottom: "20px"}}>
+                <div className="font-pagetitle">Photos</div>
+                <div className="font-body">
                     If you have a photo you'd like added, please send it to <a className="link" href="mailto:petertheoomen@gmail.com">petertheoomen@gmail.com</a>.
                 </div>
                 <div style={{height: "100%", overflow: "auto"}}>
@@ -57,8 +57,8 @@ function Photos() {
                     {photos && <div style={{}}><Gallery photos={photos} /></div>}
                 </div>
             </div>
-            <Navbar selectedItemIndex={1} />
         </div>
+        <Navbar selectedItemIndex={1} />
     </div>
   );
 }

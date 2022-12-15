@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 
 function Music() {
   return (
-    <div className="background">
+    <div className="background flex row column-r-m middle">
         <div className="flex wrap row middle w-100 h-100">
             <div className="flex column grow h-100" style={{paddingLeft: "80px", paddingRight: "80px"}}>
                 <div className="font-pagetitle" style={{paddingTop: "40px", paddingBottom: "20px"}}>Music</div>
@@ -19,8 +19,8 @@ function Music() {
                     />
                 </div>
             </div>
-            <Navbar selectedItemIndex={3} />
         </div>
+        <Navbar selectedItemIndex={3} />
     </div>
   );
 }

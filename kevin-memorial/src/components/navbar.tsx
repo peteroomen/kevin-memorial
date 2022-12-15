@@ -11,7 +11,7 @@ function Navbar(props: IProps) {
     ];
 
     return (
-        <nav className='flex column font-nav navbar'>
+        <nav className='flex column row-m font-nav navbar wrap'>
             {links.map((link, i) => 
                 <a href={link.url} className={i == props.selectedItemIndex ? "selected" : ""}>{link.title}</a>)
             }

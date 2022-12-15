@@ -63,22 +63,17 @@ pre, p {
 }
 
 div.background {
-  /*background-image: url("img/mt-maunganui.webp");*/
   background-color: #222222;
-  background-size: auto;
-  background-position: center;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 img.kevin {
   width: 100%;
-  max-width: 20vw;
+  max-width: 280px;
   border-radius: 10px;
 }
 
@@ -97,6 +92,14 @@ nav.navbar a {
   -moz-transition: all 0.2s 0s ease-in-out;
   -o-transition: all 02s 0s ease-in-out;
   transition: all 0.2s 0s ease-in-out;
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 nav.navbar a:hover {
@@ -178,6 +181,10 @@ a.link:hover {
   flex-wrap: wrap;
 }
 
+.flex.gap {
+  gap: 40px;
+}
+
 .grow {
   flex: 1;
 }
@@ -188,4 +195,141 @@ a.link:hover {
 
 .h-100 {
   height: 100%;
+}
+
+.pl-l {
+  padding-left: 80px;
+}
+
+.pr-l {
+  padding-right: 80px;
+}
+
+.pt-l {
+  padding-top: 80px;
+}
+
+.pb-l {
+  padding-bottom: 80px;
+}
+
+.pt-s {
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .font-title {
+    font-size: 62px;
+  }
+  
+  .font-subtitle {
+    font-size: 32px;
+  }
+  
+  .font-subtitle2 {
+    font-size: 28px;
+  }
+  
+  .font-pagetitle {
+    font-family: 'Tangerine', serif;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  
+  .font-memoir {
+    font-size: 22px;
+  }
+  
+  .font-body {
+    font-size: 18px;
+  }
+  
+  .font-nav {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .font-title {
+    font-size: 48px;
+  }
+  
+  .font-subtitle {
+    font-size: 26px;
+  }
+  
+  .font-subtitle2 {
+    font-size: 20px;
+  }
+  
+  .font-pagetitle {
+    font-family: 'Tangerine', serif;
+    font-size: 26px;
+    font-weight: 800;
+  }
+  
+  .font-memoir {
+    font-size: 18px;
+  }
+  
+  .font-body {
+    font-size: 16px;
+  }
+  
+  .font-nav {
+    font-size: 18px;
+  }
+
+  .pl-l {
+    padding-left: 40px;
+  }
+
+  .pr-l {
+    padding-right: 40px;
+  }
+
+  .pt-l {
+    padding-top: 40px;
+  }
+
+  .pb-l {
+    padding-bottom: 40px;
+  }
+
+  .pt-s {
+    padding-top: 10px;
+  }
+
+  nav.navbar a {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .flex.gap {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+
+  .flex.row-m {
+    flex-direction: row;
+  }
+
+  .flex.column-m {
+    flex-direction: column;
+  }
+
+  .flex.column-r-m {
+    flex-direction: column-reverse;
+  }
+
+  .flex.reset-justify-m {
+    justify-content: normal;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
 }

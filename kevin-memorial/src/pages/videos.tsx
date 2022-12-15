@@ -42,16 +42,19 @@ function Videos() {
     }, []);
 
   return (
-    <div className="background">
-        <div className="flex wrap row middle w-100 h-100">
-            <div className="flex column grow h-100" style={{paddingLeft: "80px", paddingRight: "80px"}}>
-                <div className="font-pagetitle" style={{paddingTop: "40px", paddingBottom: "20px"}}>Videos</div>
-                <div className="font-body" style={{paddingBottom: "20px"}}>
+    <div className="background flex row column-r-m middle">
+        <div className="grow h-100" style={{overflow: "auto"}}>
+            <div 
+                className="flex column reset-justify-m middle w-100 h-100 gap pl-l pr-l pt-l pb-l" 
+                style={{boxSizing: "border-box"}}
+            >
+                <div className="font-pagetitle">Videos</div>
+                <div className="font-body">
                     If you have a video you'd like added, please send it to <a className="link" href="mailto:petertheoomen@gmail.com">petertheoomen@gmail.com</a>.
                 </div>
-                <div>
+                <div style={{height: "100%", maxWidth: "720px"}}>
                     <iframe 
-                        width="720" 
+                        width="100%" 
                         height="480" 
                         src="https://www.youtube.com/embed/videoseries?list=PLTUA3F4BI6IHJ1QJ-vZ7ojKXto1aiUCJ3" 
                         title="YouTube video player" 
@@ -61,8 +64,8 @@ function Videos() {
                     />
                 </div>
             </div>
-            <Navbar selectedItemIndex={2} />
         </div>
+        <Navbar selectedItemIndex={2} />
     </div>
   );
 }
