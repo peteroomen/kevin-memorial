@@ -28,14 +28,26 @@ console.log("Configuring API...");
 
 const routes = require('./routes');
 app.use(express.json());
-app.use('/api', routes)
+app.use('/api', routes);
 
 // Configure express
 console.log("Configuring express...");
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', function (req, res) {
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+app.get('/photos', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+app.get('/videos', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+app.get('/music', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+app.get('/memories', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
