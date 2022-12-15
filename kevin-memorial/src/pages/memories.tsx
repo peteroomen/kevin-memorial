@@ -3,28 +3,13 @@ import Navbar from "../components/navbar";
 import { MemoriesService } from "../services/memoriesService";
 
 function Memories() {
-    const memoriesService = new MemoriesService("http://localhost/api", "supersecretpassword240");
+    const memoriesService = new MemoriesService("http://ripkevin.nz/api", "supersecretpassword240");
     useEffect(() => {
         memoriesService.listApprovedMemories()
             .then(data => console.log("loaded", setMemories(data)))
     }, [])
 
-    const [memories, setMemories] = useState<any>([{
-        name: "Peter",
-        comment: "In a minute, I'mma need a \nSentimental man or women, to pump\nme up"
-    }, {
-        name: "Peter",
-        comment: "In a minute, I'mma need a \nSentimental man or women, to pump feeling fussy in my bel tyringa bring up the fabulous\nme up"
-    }, {
-        name: "Peter",
-        comment: "In a minute, I'mma need a \nSentimental man or women, to pump\nme up"
-    }, {
-        name: "Peter",
-        comment: "In a minute, I'mma need a \nSentimental man or women, to pump\nme up"
-    }, {
-        name: "Peter",
-        comment: "In a minute, I'mma need a \nSentimental man or women, to pump\nme up"
-    }]);
+    const [memories, setMemories] = useState<any>();
 
     const [name, setName] = useState<string>("");
     const [comment, setComment] = useState<string>("");
