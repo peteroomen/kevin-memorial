@@ -5,6 +5,7 @@ function Navbar(props: IProps) {
     let links = [
         {title: 'Home', url: '/'},
         {title: 'Photos', url: '/photos'},
+        {title: 'Videos', url: '/videos'},
         {title: 'Music', url: '/music'},
         {title: 'Memories', url: '/memories'},
     ];

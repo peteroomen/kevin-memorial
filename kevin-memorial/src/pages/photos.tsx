@@ -48,10 +48,10 @@ function Photos() {
                 className='flex column grow' 
                 style={{paddingLeft: "80px", paddingRight: "80px", paddingBottom: "80px", height: "100%"}}
             >
-            <div className="font-pagetitle" style={{paddingTop: "80px", paddingBottom: "20px"}}>Photos</div>
-            <div className="font-body" style={{paddingBottom: "20px"}}>
-                A selection of photos from Kevin's life. Good memories and special moments to remember him by.
-            </div>
+                <div className="font-pagetitle" style={{paddingTop: "80px", paddingBottom: "20px"}}>Photos</div>
+                <div className="font-body" style={{paddingBottom: "20px"}}>
+                    If you have a photo you'd like added, please send it to <a className="link" href="mailto:petertheoomen@gmail.com">petertheoomen@gmail.com</a>.
+                </div>
                 <div style={{height: "100%", overflow: "auto"}}>
                     {!photos && <div className="font-body">Loading...</div>}
                     {photos && <div style={{}}><Gallery photos={photos} /></div>}

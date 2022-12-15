@@ -8,7 +8,7 @@ function Home() {
             <div className='flex column'>
                 <img className="kevin" src={kevin} />
             </div>
-            <div className='flex column grow' style={{paddingLeft: "80px", paddingRight: "80px"}}>
+            <div className='flex column' style={{paddingLeft: "80px", paddingRight: "80px"}}>
                 <div className="font-title">
                     Kevin<br/>
                     Smith
@@ -16,12 +16,17 @@ function Home() {
                 <div className="font-subtitle" style={{marginTop: "20px", marginBottom: "20px"}}>
                     1962-2022
                 </div>
+            </div>
+            <div className='flex column grow' style={{paddingRight: "80px"}}>
                 <div className="font-memoir">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, but also the leap into 
-                    electronic typesetting, remaining essentially unchanged.
+                    You went away so quickly,<br/>
+                    no time to say goodbye.<br/><br/>
+                    Our lives will never part,<br/>
+                    as precious memories never die.<br/><br/>
+                    May your journey now be peaceful,<br/>
+                    up in the mighty sky.<br/><br/>
+                    And look down upon the family you created,<br/>
+                    with a proud and happy sigh.
                 </div>
             </div>
             <Navbar selectedItemIndex={0} />

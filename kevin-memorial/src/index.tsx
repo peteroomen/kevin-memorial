@@ -11,6 +11,7 @@ import Home from './pages/home';
 import Memories from './pages/memories';
 import Music from './pages/music';
 import Photos from './pages/photos';
+import Videos from './pages/videos';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/photos",
     element: <Photos />
+  },
+  {
+    path: "/videos",
+    element: <Videos />
   },
   {
     path: "/music",
